@@ -1,0 +1,9 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [{
+      "appID": "VOTRE_TEAM_ID_APPLE.com.votreom.elite",
+      "paths": ["/event/*", "/*"]
+    }]
+  }
+}
