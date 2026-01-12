@@ -2,7 +2,9 @@
   "relation": ["delegate_permission/common.handle_all_urls"],
   "target": {
     "namespace": "android_app",
-    "package_name": "com.votreom.elite",
-    "sha256_cert_fingerprints": ["VOTRE_CLE_SHA256_ICI"]
+    "package_name": "com.jasman.MonProjet",
+    "sha256_cert_fingerprints": [
+      "43:38:43:EE:0D:4E:21:FB:63:3E:7D:EB:15:A4:3F:31:3A:16:04:0C:9E:0A:21:34:02:6C:EA:B9:A4:2C:0F:AB"
+    ]
   }
 }]

@@ -19,10 +19,10 @@ const RedirectLogic = () => {
     if (!eventId) return;
 
     // 1. Schéma personnalisé pour ouvrir l'App Mobile
-    const appScheme = `elite-app://event/${eventId}`;
+    const appScheme = `eventmaster-app://event/${eventId}`; // Utilise le scheme validé
     
     // 2. URLs des Stores (À REMPLACER PAR VOS VRAIS IDs)
-    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.votreom.elite";
+    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.jasman.MonProjet"; // Package validé
     const appStoreUrl = "https://apps.apple.com/app/idVOTRE_ID_APPLE";
 
     // Tentative d'ouverture immédiate
