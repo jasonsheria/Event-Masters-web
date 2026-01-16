@@ -6,6 +6,7 @@ import {
   useSearchParams, 
   useParams 
 } from 'react-router-dom';
+import Demo  from  './pages/demo';
 
 // Composant qui gère la logique de redirection
 const RedirectLogic = () => {
@@ -57,7 +58,50 @@ const RedirectLogic = () => {
     </div>
   );
 };
+const RedirectLogic3 = () => {
+  
+  useEffect(() => {
+    
 
+    // 1. Schéma personnalisé pour ouvrir l'App Mobile
+    const appScheme = `eventmaster-app://(admin)/home`; // Utilise le scheme validé
+    
+    // 2. URLs des Stores (À REMPLACER PAR VOS VRAIS IDs)
+    const playStoreUrl = "https://play.google.com/store/apps/details?id=com.jasman.MonProjet"; // Package validé
+    const appStoreUrl = "https://apps.apple.com/app/idVOTRE_ID_APPLE";
+
+    // Tentative d'ouverture immédiate
+    window.location.href = appScheme;
+
+    // Fallback après 2.5 secondes
+    const timer = setTimeout(() => {
+      const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+      // Si l'utilisateur est toujours sur cette page, on redirige vers le store
+      if (/android/i.test(userAgent)) {
+        window.location.href = playStoreUrl;
+      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+        window.location.href = appStoreUrl;
+      }
+    }, 2500);
+
+    return () => clearTimeout(timer);
+  });
+
+  return (
+    <div style={styles.container}>
+      <div style={styles.card}>
+        <h1 style={styles.title}>Elite Event Master</h1>
+        <div style={styles.spinner}></div>
+        <p style={styles.text}>
+         
+             "Ouverture de l'événement dans l'application..." 
+            
+        </p>
+      </div>
+    </div>
+  );
+};
 function App() {
   return (
     <Router>
@@ -66,6 +110,9 @@ function App() {
         <Route path="/event/:id" element={<RedirectLogic />} />
         {/* Supporte https://domaine.com (avec ?id=ID) */}
         <Route path="/" element={<RedirectLogic />} />
+        <Route path="/demo" element={<Demo/>} />
+        <Route path="/login" element={<RedirectLogic3 />} />
+
       </Routes>
     </Router>
   );
