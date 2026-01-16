@@ -4,7 +4,7 @@
   status = 200
 
 [[headers]]
-  for = "/.well-known/apple-app-site-association"
+  for = "/.well-known/apple-app-site-association"git push -u origin main
   [headers.values]
     Content-Type = "application/json"
 
