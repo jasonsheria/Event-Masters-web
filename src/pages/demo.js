@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useSpring } from 'framer-motion';
 import {
-  Users, QrCode, Mic, Mail, Lock, Sparkles, Send,
+  Users, QrCode, Mail, Lock, Sparkles, Send,
   LayoutDashboard, Calendar, CreditCard, Settings,
   Database, Palette, Cpu, Github, Linkedin,
   Download, Apple, PlayCircle // Nouveaux imports pour les stores
