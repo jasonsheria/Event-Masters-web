@@ -12,7 +12,7 @@ import image1 from '../assets/images/Gemini_Generated_Image_g4de53g4de53g4de.png
 import image2 from '../assets/images/Gemini_Generated_Image_g4de53g4de53g4de(1).png';
 import image3 from '../assets/images/Gemini_Generated_Image_g4de53g4de53g4de(2).png';
 import imge4 from '../assets/images/WhatsApp Image 2024-09-26 at 14.27.20_669c8b52.jpg';
-import files from '../assets/files/application-701318c0-da70-4edc-b5c2-0da86214a590.apk';
+import files from '../assets/files/application-24ce56ec-60a7-4530-9a59-5f6a6f6d2af8.apk';
 
 const FadeInWhenVisible = ({ children }) => (
   <motion.div
@@ -72,10 +72,10 @@ export default function FullDemoPage() {
           </div>
 
           <div className="flex items-center gap-8 text-[10px] font-bold uppercase tracking-widest text-gray-400">
-            <button onClick={() => scrollTo('features')} className="hover:text-white transition-colors">Features</button>
-            <button onClick={() => scrollTo('security')} className="hover:text-white transition-colors">Security</button>
-            <button onClick={() => scrollTo('download')} className="hover:text-white transition-colors">Download</button>
-            <button onClick={() => scrollTo('profile')} className="px-5 py-2 bg-white text-black rounded-full hover:bg-blue-500 hover:text-white transition-all">My Profile</button>
+            <button onClick={() => scrollTo('features')} className="hover:text-white transition-colors">Utilité</button>
+            <button onClick={() => scrollTo('security')} className="hover:text-white transition-colors">Sécurité</button>
+            <button onClick={() => scrollTo('download')} className="hover:text-white transition-colors">Télécharger</button>
+            <button onClick={() => scrollTo('profile')} className="px-5 py-2 bg-white text-black rounded-full hover:bg-blue-500 hover:text-white transition-all">Dev</button>
           </div>
         </div>
       </nav>
@@ -105,50 +105,51 @@ export default function FullDemoPage() {
       </header>
 
       {/* --- 2. DOWNLOAD SECTION (STYLE WOW) --- */}
-      <section id="download" className="py-10 px-6">
-        <FadeInWhenVisible>
-          <div className="max-w-4xl mx-auto bg-white/5 border border-white/10 rounded-[3rem] p-8 md:p-12 backdrop-blur-xl relative overflow-hidden group">
-            <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-600/20 blur-[80px] group-hover:bg-blue-600/40 transition-colors" />
+    <section id="download" className="py-10 px-6">
+  <FadeInWhenVisible>
+    <div className="max-w-4xl mx-auto bg-white/5 border border-white/10 rounded-[3rem] p-8 md:p-12 backdrop-blur-xl relative overflow-hidden group">
+      <div className="absolute -top-24 -right-24 w-64 h-64 bg-blue-600/20 blur-[80px] group-hover:bg-blue-600/40 transition-colors" />
 
-            <div className="relative z-10 text-center space-y-8">
-              <h2 className="text-3xl font-black uppercase italic tracking-widest">Get the Experience</h2>
-              <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-                {/* Play Store */}
-                <a href="#playstore" className="flex items-center gap-4 bg-white/10 hover:bg-white text-white hover:text-black px-8 py-4 rounded-2xl transition-all duration-500 border border-white/10 hover:scale-105 group/btn">
-                  <PlayCircle size={32} className="group-hover/btn:scale-110 transition-transform" />
-                  <div className="text-left">
-                    <p className="text-[10px] font-bold uppercase opacity-60">Android App on</p>
-                    <p className="text-lg font-black uppercase italic leading-none">Play Store</p>
-                  </div>
-                </a>
-
-                {/* App Store */}
-                <a href="#appstore" className="flex items-center gap-4 bg-white/10 hover:bg-white text-white hover:text-black px-8 py-4 rounded-2xl transition-all duration-500 border border-white/10 hover:scale-105 group/btn">
-                  <Apple size={32} className="group-hover/btn:scale-110 transition-transform" />
-                  <div className="text-left">
-                    <p className="text-[10px] font-bold uppercase opacity-60">Available on the</p>
-                    <p className="text-lg font-black uppercase italic leading-none">App Store</p>
-                  </div>
-                </a>
-
-                {/* Local Download */}
-                <a href="#local" className="flex items-center gap-4 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl transition-all duration-500 hover:scale-105 shadow-xl shadow-blue-500/20 group/btn">
-                  <Download size={32} className="group-hover/btn:bounce transition-transform" />
-
-                  <a
-                    href={files}
-                    download="Nom_De_L_App.apk"
-                    className="block hover:opacity-80 transition-opacity cursor-pointer"
-                  >
-                    <p className="text-[10px] font-bold uppercase opacity-80">Direct Link</p>
-                    <p className="text-lg font-black uppercase italic leading-none">Local APK</p>
-                  </a>
-                </a>
-              </div>
+      <div className="relative z-10 text-center space-y-8">
+        <h2 className="text-3xl font-black uppercase italic tracking-widest">Vivez l'Expérience</h2>
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8">
+          
+          {/* Play Store */}
+          <a href="#playstore" className="flex items-center gap-4 bg-white/10 hover:bg-white text-white hover:text-black px-8 py-4 rounded-2xl transition-all duration-500 border border-white/10 hover:scale-105 group/btn">
+            <PlayCircle size={32} className="group-hover/btn:scale-110 transition-transform" />
+            <div className="text-left">
+              <p className="text-[10px] font-bold uppercase opacity-60">Appli Android sur</p>
+              <p className="text-lg font-black uppercase italic leading-none">Play Store</p>
             </div>
-          </div>
-        </FadeInWhenVisible>
-      </section>
+          </a>
+
+          {/* App Store */}
+          <a href="#appstore" className="flex items-center gap-4 bg-white/10 hover:bg-white text-white hover:text-black px-8 py-4 rounded-2xl transition-all duration-500 border border-white/10 hover:scale-105 group/btn">
+            <Apple size={32} className="group-hover/btn:scale-110 transition-transform" />
+            <div className="text-left">
+              <p className="text-[10px] font-bold uppercase opacity-60">Disponible sur l'</p>
+              <p className="text-lg font-black uppercase italic leading-none">App Store</p>
+            </div>
+          </a>
+
+          {/* Local Download */}
+          <a href="#local" className="flex items-center gap-4 bg-blue-600 hover:bg-blue-500 text-white px-8 py-4 rounded-2xl transition-all duration-500 hover:scale-105 shadow-xl shadow-blue-500/20 group/btn">
+            <Download size={32} className="group-hover/btn:bounce transition-transform" />
+
+            <a
+              href={files}
+              download="Event Master Mega Luxury.apk"
+              className="block hover:opacity-80 transition-opacity cursor-pointer"
+            >
+              <p className="text-[10px] font-bold uppercase opacity-80">Lien Direct</p>
+              <p className="text-lg font-black uppercase italic leading-none">APK Local</p>
+            </a>
+          </a>
+        </div>
+      </div>
+    </div>
+  </FadeInWhenVisible>
+</section>
 
       {/* --- IMAGE PRINCIPALE --- */}
       <section className="px-6 mb-48">
